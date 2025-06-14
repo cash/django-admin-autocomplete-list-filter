@@ -8,12 +8,12 @@ with open(os.path.join(CURRENT_WORKING_DIRECTORY, 'README.md')) as fp:
     README = fp.read()
 
 setup(
-    name='django-admin-autocomplete-list-filter',
-    version='1.0.1',
+    name='django-admin-autocomplete-list-filters2',
+    version='1.0.2',
     description='Ajax autocomplete list filter for Django admin',
     long_description=README,
     long_description_content_type='text/markdown',
-    url='https://github.com/demiroren-teknoloji/django-admin-autocomplete-list-filter',
+    url='https://github.com/cash/django-admin-autocomplete-list-filter',
     author='Demirören Teknoloji Django Team',
     author_email='account@demirorenteknoloji.com',
     license='MIT',
@@ -23,7 +23,7 @@ setup(
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
         'Framework :: Django',
-        'Framework :: Django :: 2.2',
+        'Framework :: Django :: 4.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',

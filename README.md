@@ -1,12 +1,3 @@
-![Python](https://img.shields.io/badge/python-3.5-green.svg)
-![Python](https://img.shields.io/badge/python-3.6-green.svg)
-![Python](https://img.shields.io/badge/python-3.7-green.svg)
-![Python](https://img.shields.io/badge/python-3.9-green.svg)
-![Django](https://img.shields.io/badge/django-3.+-green.svg)
-![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
-[![PyPI version](https://badge.fury.io/py/django-admin-autocomplete-list-filter.svg)](https://badge.fury.io/py/django-admin-autocomplete-list-filter)
-[![Downloads](https://pepy.tech/badge/django-admin-autocomplete-list-filter)](https://pepy.tech/project/django-admin-autocomplete-list-filter)
-
 # django-admin-autocomplete-list-filter
 
 Ajax autocomplete list filter helper for Django admin. Uses Django’s built-in
@@ -14,22 +5,10 @@ autocomplete widget! No extra package or install required!
 
 ![After](screenshots/demo.gif?v=2 "Widget in action...")
 
-## Update
-
-Dropped support for Django 2 family. Works with **Django 3** or higher!. `master`
-branch is renamed to `main`... You can fix your existing clones via;
-
-```bash
-git branch -m master main
-git fetch origin
-git branch -u origin/main main
-git remote set-head origin -a
-```
-
 ## Installation and Usage
 
 ```bash
-$ pip install django-admin-autocomplete-list-filter
+$ pip install django-admin-autocomplete-list-filter2
 ```
 
 Add `djaa_list_filter` to `INSTALLED_APPS` in your `settings.py`:
@@ -148,18 +127,6 @@ This project is licensed under MIT
 
 ---
 
-## Contribute
-
-All PR’s are welcome!
-
-1. `fork` (https://github.com/demiroren-teknoloji/django-admin-autocomplete-list-filter/fork)
-1. Create your `branch` (`git checkout -b my-features`)
-1. `commit` yours (`git commit -am 'added killer options'`)
-1. `push` your `branch` (`git push origin my-features`)
-1. Than create a new **Pull Request**!
-
----
-
 ## TODO
 
 - Add unit tests
@@ -167,8 +134,19 @@ All PR’s are welcome!
 
 ## Change Log
 
+**2022-07-29**
+
+ - Bump version: 1.0.2
+ - Fixed Django 4 compatibility by removing usage of ugettext_lazy
+
+**2021-09-03**
+
+- Bump version: 1.0.1
+- Fixed css conflict with Django theme
+
 **2021-08-17**
 
+- Bump verson: 1.0.0
 - [Fix Django 3 compatibility changes](https://github.com/demiroren-teknoloji/django-admin-autocomplete-list-filter/pull/6)
 - [Allow for more than one autocomplete field](https://github.com/demiroren-teknoloji/django-admin-autocomplete-list-filter/pull/5)
 - [staticfiles fix](https://github.com/demiroren-teknoloji/django-admin-autocomplete-list-filter/pull/3)
