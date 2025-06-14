@@ -8,7 +8,7 @@ with open(os.path.join(CURRENT_WORKING_DIRECTORY, 'README.md')) as fp:
     README = fp.read()
 
 setup(
-    name='django-admin-autocomplete-list-filters2',
+    name='django-admin-autocomplete-list-filter2',
     version='1.0.2',
     description='Ajax autocomplete list filter for Django admin',
     long_description=README,

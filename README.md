@@ -11,7 +11,7 @@ autocomplete widget! No extra package or install required!
 $ pip install django-admin-autocomplete-list-filter2
 ```
 
-Add `djaa_list_filter` to `INSTALLED_APPS` in your `settings.py`:
+Add `djaa_list_filter2` to `INSTALLED_APPS` in your `settings.py`:
 
 ```python
 INSTALLED_APPS = [
@@ -21,7 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'djaa_list_filter',           
+    'djaa_list_filter2',           
 ]
 ```
 
@@ -73,7 +73,7 @@ in the related ModelAdmin. To enable completion on `Category` relation,
 ```python
 from django.contrib import admin
 
-from djaa_list_filter.admin import (
+from djaa_list_filter2.admin import (
     AjaxAutocompleteListFilterModelAdmin,
 )
 
@@ -133,6 +133,11 @@ This project is licensed under MIT
 - Improve JavaScript code :)
 
 ## Change Log
+
+**2025-06-14**
+
+ - Bump version: 1.0.3
+ - Renamed to djaa_list_filter2 to avoid conflicts with other versions
 
 **2022-07-29**
 

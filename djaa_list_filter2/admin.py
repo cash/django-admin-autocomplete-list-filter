@@ -47,7 +47,7 @@ class AjaxAutocompleteSelectWidget(AutocompleteSelect):
 class AjaxAutocompleteListFilter(admin.RelatedFieldListFilter):
     title = _('list filter')
     parameter_name = '%s__%s__exact'
-    template = 'djaa_list_filter/admin/filter/autocomplete_list_filter.html'
+    template = 'djaa_list_filter2/admin/filter/autocomplete_list_filter.html'
 
     def __init__(self, field, request, params, model, model_admin, field_path):
         super().__init__(field, request, params, model, model_admin, field_path)
@@ -103,12 +103,12 @@ class AjaxAutocompleteListFilterModelAdmin(admin.ModelAdmin):
             'admin/js/vendor/select2/i18n/tr.js',
             'admin/js/jquery.init.js',
             'admin/js/autocomplete.js',
-            'djaa_list_filter/admin/js/autocomplete_list_filter.js',
+            'djaa_list_filter2/admin/js/autocomplete_list_filter.js',
         ]
         css = {
             'screen': [
                 'admin/css/vendor/select2/select2.css',
                 'admin/css/autocomplete.css',
-                'djaa_list_filter/admin/css/autocomplete_list_filter.css',
+                'djaa_list_filter2/admin/css/autocomplete_list_filter.css',
             ]
         }
